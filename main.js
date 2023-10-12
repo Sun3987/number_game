@@ -55,8 +55,10 @@ function play(){
     displayChance()
     console.log(userValue) 
     if(userValue < target){
+        resultAreaImg.src = "/images/nope.gif"
         resultArea.textContent ="Up!"
     }else if (userValue > target){
+        resultAreaImg.src = "/images/nope.gif"
         resultArea.textContent ="Down!"
     }else {
         resultAreaImg.src = "/images/success.gif"
